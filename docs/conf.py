@@ -62,6 +62,15 @@ copyright = f"{datetime.datetime.now().year}, {author}"
 
 # -- General configuration ---------------------------------------------------
 
+<<<<<<<
+=======
+# Wrap large function/method signatures
+maximum_signature_line_length = 80
+
+# Add any Sphinx extension module names here, as strings. They can be
+# extensions coming with Sphinx (named "sphinx.ext.*") or your custom
+# ones.
+>>>>>>>
 # Suppress warnings about overriding directives as we overload some of the
 # doctest extensions.
 suppress_warnings = ["app.add_directive", ]
@@ -99,10 +108,14 @@ extensions = [
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "jupyter_execute", "**/*_NOTES.md"]
 
 # The suffix(es) of source filenames.
+<<<<<<<
 # You can specify multiple suffix as a list of string:
 source_suffix = ".rst"
 
 myst_enable_extensions = ["colon_fence", "dollarmath", "substitution"]
+=======
+source_suffix = {".rst": "restructuredtext"}
+>>>>>>>
 
 # The master toctree document.
 master_doc = "index"
